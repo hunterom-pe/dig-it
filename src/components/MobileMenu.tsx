@@ -1,7 +1,7 @@
 import { X } from 'lucide-react'
 import { useEffect, useRef, type CSSProperties } from 'react'
 import { fullAddress, nav, site } from '../data/site'
-import { Button, TextLink } from './ui'
+import { Button, TextLink, TrowelMark } from './ui'
 
 type Props = {
   onClose: () => void
@@ -62,6 +62,7 @@ export function MobileMenu({ onClose, upcoming }: Props) {
     >
       <div className="wrap flex h-14 flex-none items-center justify-between">
         <span className="inline-flex items-baseline gap-2 leading-none whitespace-nowrap">
+          <TrowelMark className="-mr-1 -ml-1.5 h-9 w-9 flex-none self-center" />
           <span className="display text-[1.75rem]">Dig It</span>
           <span className="accent text-[1.35rem]">gardens</span>
         </span>

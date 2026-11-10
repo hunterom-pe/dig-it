@@ -1,7 +1,7 @@
 import type { CSSProperties } from 'react'
 import { site } from '../data/site'
 import { Photo } from './Photo'
-import { Button, Spark } from './ui'
+import { Button, Spark, TrowelMark } from './ui'
 
 /**
  * The hero copy is rendered twice on desktop: once in forest on the ivory page,
@@ -86,14 +86,7 @@ function Sticker() {
             {text}
           </textPath>
         </text>
-        <g transform="translate(100 100) scale(2.6) translate(-12 -12)" className="text-ink">
-          <path
-            d="M12 1v22M1 12h22M4.2 4.2l15.6 15.6M19.8 4.2 4.2 19.8"
-            stroke="currentColor"
-            strokeWidth="2.2"
-            strokeLinecap="round"
-          />
-        </g>
+        <TrowelMark x="56" y="56" width="88" height="88" className="text-ink" />
       </svg>
     </a>
   )

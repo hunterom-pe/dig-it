@@ -1,5 +1,5 @@
 import { ArrowRight, ArrowUpRight } from 'lucide-react'
-import type { ReactNode } from 'react'
+import type { ReactNode, SVGProps } from 'react'
 
 const isExternal = (href: string) => /^https?:/.test(href)
 
@@ -76,6 +76,26 @@ export function Spark({ className = '' }: { className?: string }) {
         strokeWidth="2.6"
         strokeLinecap="round"
       />
+    </svg>
+  )
+}
+
+/**
+ * Brand mark: a hand trowel with a leaf sprouting from the neck.
+ * The trowel takes the current text colour, so it works on any background;
+ * the leaf is teal and the ferrule terracotta. The same drawing is used for
+ * public/favicon.svg, so update both if the shapes change.
+ */
+export function TrowelMark(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" {...props}>
+      <g transform="translate(32 32) rotate(35) translate(-32 -30)">
+        <path d="M30 24.5c-1-7.5-6-11.5-15-11.5 1 7.5 6 11.5 15 11.5z" className="fill-teal" />
+        <path d="M30 19h4v9h-4z" fill="currentColor" />
+        <path d="M19 30a3 3 0 0 1 3-3h20a3 3 0 0 1 3 3v8c0 9-6 16-11.4 20.3a2.6 2.6 0 0 1-3.2 0C25 54 19 47 19 38z" fill="currentColor" />
+        <path d="M27.5 15.5v-10a4.5 4.5 0 0 1 9 0v10z" fill="currentColor" />
+        <path d="M27.5 15.5h9V20h-9z" className="fill-terracotta" />
+      </g>
     </svg>
   )
 }

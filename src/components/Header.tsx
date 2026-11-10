@@ -3,6 +3,7 @@ import { nav, site } from '../data/site'
 import { getUpcomingWorkshops } from '../data/workshops'
 import { useActiveSection, useHeaderState } from '../hooks/useHeaderState'
 import { MobileMenu } from './MobileMenu'
+import { TrowelMark } from './ui'
 
 const OBSERVED = ['top', ...nav.map((item) => item.id)]
 
@@ -13,6 +14,7 @@ export function Wordmark({ className = '' }: { className?: string }) {
       aria-label={`${site.name}, back to top`}
       className={`inline-flex min-h-11 items-center gap-2 leading-none whitespace-nowrap ${className}`}
     >
+      <TrowelMark className="-mr-1 -ml-1.5 h-9 w-9 flex-none" />
       <span className="display text-[1.75rem] tracking-[-0.02em]">Dig It</span>
       <span className="accent text-[1.35rem]">gardens</span>
     </a>
