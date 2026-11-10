@@ -1,0 +1,35 @@
+# Netlify build + hosting configuration.
+# Netlify reads this file on every deploy; values here override the dashboard.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# This is a private, unofficial design concept. Ask crawlers not to index or
+# follow anything on any deploy (production, branch and preview alike).
+# NOTE: this is a request to well-behaved crawlers, not access control.
+# Anyone with the URL can still open the site. See README > "Keeping it private".
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Vite fingerprints everything in /assets, so it can be cached forever.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Single-page app fallback: unknown paths serve index.html instead of a 404.
+# Real files (JS, CSS, fonts, favicon) are always served first.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
