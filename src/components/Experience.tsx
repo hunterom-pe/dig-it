@@ -13,7 +13,7 @@ export function Experience() {
     <section
       id="nursery"
       aria-labelledby="experience-title"
-      className="overflow-x-clip bg-ivory pt-20 pb-24 text-forest lg:pt-36 lg:pb-40"
+      className="overflow-x-clip bg-ivory pt-20 pb-16 text-forest lg:pt-36 lg:pb-28"
     >
       <div className="wrap grid gap-x-8 gap-y-14 lg:grid-cols-12">
         <div className="lg:col-span-5 lg:pt-6">
@@ -28,7 +28,7 @@ export function Experience() {
             </h2>
           </Reveal>
           <Reveal index={1}>
-            <p className="mt-8 max-w-[30rem] text-lg leading-relaxed lg:text-xl">
+            <p className="mt-8 max-w-[30rem] text-lg leading-relaxed lg:max-w-[21rem] lg:text-xl xl:max-w-[26rem]">
               Part nursery, part art-filled hideout. Come for one plant, stay for an hour,
               leave with something you didn&rsquo;t know existed.
             </p>
@@ -46,7 +46,7 @@ export function Experience() {
           </Reveal>
           <Reveal
             index={2}
-            className="absolute bottom-0 left-0 w-[44%] lg:-left-[12%] lg:w-[38%]"
+            className="absolute bottom-0 left-0 w-[44%] lg:w-[38%] xl:-left-[12%]"
           >
             <figure className="zoom relative aspect-[3/4] overflow-hidden outline outline-[10px] outline-ivory lg:outline-[14px]">
               <Photo name="experienceDetail" sizes="(min-width: 1024px) 22vw, 44vw" />
@@ -58,7 +58,7 @@ export function Experience() {
         </div>
       </div>
 
-      <div className="wrap mt-16 lg:mt-28">
+      <div className="wrap mt-14 lg:mt-24">
         <dl className="grid border-t border-forest/20 md:grid-cols-3">
           {NOTES.map(([term, detail], index) => (
             <Reveal

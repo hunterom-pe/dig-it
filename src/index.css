@@ -10,6 +10,7 @@
   --color-terracotta-deep: #ad4a1b; /* AA-contrast terracotta for text on ivory */
   --color-teal: #31a6a1;
   --color-lavender: #a684c1;
+  --color-lavender-soft: #cfbfdd; /* lavender tinted toward ivory, for large fields */
 
   --font-display: 'Bricolage Grotesque Variable', 'Arial Narrow', system-ui, sans-serif;
   --font-sans: 'Hanken Grotesk Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;

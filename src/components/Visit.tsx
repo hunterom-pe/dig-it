@@ -34,12 +34,12 @@ export function Visit() {
 
             <Reveal index={1}>
               <dl className="mt-10 border-t border-ink/30">
-                <div className="grid grid-cols-[6.5rem_1fr] gap-4 border-b border-ink/30 py-5">
+                <div className="grid grid-cols-[4.75rem_1fr] gap-4 min-[380px]:grid-cols-[6.5rem_1fr] border-b border-ink/30 py-5">
                   <dt className="label pt-1.5">Find us</dt>
                   <dd>
                     <address className="not-italic">
                       <span className="block font-semibold">{site.name}</span>
-                      <span className="display mt-1 block text-[1.875rem] lg:text-4xl">
+                      <span className="display mt-1 block text-[1.625rem] min-[380px]:text-[1.875rem] lg:text-[1.75rem] xl:text-4xl">
                         {address.street}
                       </span>
                       <span className="mt-1 block">
@@ -48,20 +48,20 @@ export function Visit() {
                     </address>
                   </dd>
                 </div>
-                <div className="grid grid-cols-[6.5rem_1fr] gap-4 border-b border-ink/30 py-5">
+                <div className="grid grid-cols-[4.75rem_1fr] gap-4 min-[380px]:grid-cols-[6.5rem_1fr] border-b border-ink/30 py-5">
                   <dt className="label pt-1.5">Hours</dt>
                   <dd>
-                    <span className="display block text-[1.875rem] lg:text-4xl">{hours.time}</span>
+                    <span className="display block text-[1.625rem] min-[380px]:text-[1.875rem] lg:text-[1.75rem] xl:text-4xl">{hours.time}</span>
                     <span className="mt-1 block">{hours.days}</span>
                   </dd>
                 </div>
-                <div className="grid grid-cols-[6.5rem_1fr] gap-4 border-b border-ink/30 py-5">
+                <div className="grid grid-cols-[4.75rem_1fr] gap-4 min-[380px]:grid-cols-[6.5rem_1fr] border-b border-ink/30 py-5">
                   <dt className="label pt-1.5">Say hi</dt>
                   <dd className="flex flex-col items-start">
-                    <TextLink href={phone.href} className="link-quiet flex min-h-9 items-center font-semibold">
+                    <TextLink href={phone.href} className="link-quiet flex min-h-11 items-center font-semibold">
                       {phone.display}
                     </TextLink>
-                    <TextLink href={`mailto:${email}`} className="link-quiet flex min-h-9 items-center font-semibold">
+                    <TextLink href={`mailto:${email}`} className="link-quiet flex min-h-11 items-center font-semibold">
                       {email}
                     </TextLink>
                   </dd>

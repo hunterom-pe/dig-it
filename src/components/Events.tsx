@@ -8,7 +8,7 @@ export function Events() {
     <section
       id="events"
       aria-labelledby="events-title"
-      className="overflow-x-clip bg-lavender py-16 text-ink lg:py-24"
+      className="overflow-x-clip bg-lavender-soft py-14 text-ink lg:py-20"
     >
       <div className="wrap grid items-end gap-x-8 gap-y-8 lg:grid-cols-12">
         <Reveal className="lg:col-span-8">
@@ -18,7 +18,7 @@ export function Events() {
             className="display mt-6 text-[clamp(2.75rem,13vw,5rem)] lg:text-[clamp(3.5rem,6.4vw,7.5rem)]"
           >
             Weddings, parties
-            <Spark className="mx-[0.18em] inline-block h-[0.42em] w-[0.42em] align-[0.12em]" />
+            <Spark className="mx-[0.18em] inline-block h-[0.42em] w-[0.42em] align-[0.12em] text-terracotta-deep" />
             <span className="accent">your thing,</span> among the plants.
           </h2>
         </Reveal>

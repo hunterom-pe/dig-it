@@ -11,7 +11,7 @@ export function Wordmark({ className = '' }: { className?: string }) {
     <a
       href="#top"
       aria-label={`${site.name}, back to top`}
-      className={`inline-flex items-baseline gap-2 leading-none whitespace-nowrap ${className}`}
+      className={`inline-flex min-h-11 items-center gap-2 leading-none whitespace-nowrap ${className}`}
     >
       <span className="display text-[1.75rem] tracking-[-0.02em]">Dig It</span>
       <span className="accent text-[1.35rem]">gardens</span>

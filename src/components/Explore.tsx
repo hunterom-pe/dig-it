@@ -17,7 +17,7 @@ export function Explore() {
   return (
     <section
       aria-labelledby="explore-title"
-      className="overflow-x-clip bg-forest pt-20 pb-24 text-ivory lg:pt-32 lg:pb-36"
+      className="overflow-x-clip bg-forest pt-16 pb-20 text-ivory lg:pt-28 lg:pb-28"
     >
       <div className="wrap">
         <Reveal className="flex flex-wrap items-end justify-between gap-6">
@@ -36,7 +36,7 @@ export function Explore() {
           </p>
         </Reveal>
 
-        <div className="mt-14 grid gap-x-8 gap-y-20 lg:mt-24 lg:grid-cols-12">
+        <div className="mt-10 grid gap-x-8 gap-y-16 lg:mt-16 lg:grid-cols-12">
           {/* 01 — Nursery: the big one */}
           <article className="group lg:col-span-7">
             <Reveal variant="clip">
@@ -62,7 +62,7 @@ export function Explore() {
           </article>
 
           {/* 02 — Workshops: narrow, dropped down the page */}
-          <article className="group pl-[18%] lg:col-span-4 lg:col-start-9 lg:pt-36 lg:pl-0">
+          <article className="group pl-[18%] lg:col-span-4 lg:col-start-9 lg:pt-28 lg:pl-0">
             <Reveal variant="clip">
               <a href="#workshops" tabIndex={-1} aria-hidden="true" className="block">
                 <div className="zoom relative aspect-[3/4] overflow-hidden">

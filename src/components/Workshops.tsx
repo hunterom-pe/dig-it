@@ -91,7 +91,7 @@ export function Workshops() {
     <section
       id="workshops"
       aria-labelledby="workshops-title"
-      className="overflow-x-clip bg-ivory pt-20 pb-24 text-forest lg:pt-32 lg:pb-36"
+      className="overflow-x-clip bg-ivory pt-16 pb-20 text-forest lg:pt-28 lg:pb-28"
     >
       <div className="wrap">
         <Reveal className="grid items-end gap-x-8 gap-y-8 lg:grid-cols-12">
@@ -115,7 +115,7 @@ export function Workshops() {
           </div>
         </Reveal>
 
-        <div className="mt-12 lg:mt-20">
+        <div className="mt-10 lg:mt-16">
           {upcoming.length > 0 ? (
             <div className="border-b border-forest/25">
               {upcoming.map((workshop, index) => (

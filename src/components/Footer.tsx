@@ -28,8 +28,17 @@ export function Footer() {
   const { address, hours, phone, email, links, concept } = site
 
   return (
-    <footer className="overflow-hidden bg-forest text-ivory">
-      <div className="wrap pt-16 lg:pt-24">
+    <footer className="bg-forest text-ivory">
+      <div className="relative overflow-hidden">
+        {/* Oversized sign-off sits behind the columns and is cropped by the edge */}
+        <p
+          aria-hidden="true"
+          className="display pointer-events-none absolute inset-x-0 -bottom-[0.2em] text-center text-[45vw] leading-[0.8] whitespace-nowrap text-ivory/[0.08] select-none"
+        >
+          Dig It
+        </p>
+
+      <div className="wrap relative pt-12 pb-[24vw] sm:pb-[18vw] lg:pt-16 lg:pb-[13vw]">
         <div className="grid gap-x-8 gap-y-12 lg:grid-cols-12">
           <p className="display max-w-[12ch] text-[clamp(2.75rem,11vw,4.5rem)] lg:col-span-5 lg:text-[clamp(3rem,4.6vw,5.25rem)]">
             Go on. Grow a little <span className="accent text-terracotta">wild.</span>
@@ -72,13 +81,7 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Oversized sign-off, cropped by the bottom edge of the page */}
-      <p
-        aria-hidden="true"
-        className="display mt-14 -mb-[0.2em] text-center text-[45vw] leading-[0.8] whitespace-nowrap text-ivory/[0.09] select-none lg:mt-20"
-      >
-        Dig It
-      </p>
+      </div>
 
       <div className="relative border-t border-ivory/15 bg-forest">
         <div className="wrap flex flex-col gap-2 py-5 text-[0.8125rem] leading-relaxed text-ivory/75 lg:flex-row lg:items-center lg:justify-between lg:gap-8">
